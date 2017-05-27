@@ -1,3 +1,32 @@
-<h1>
-  {{title}}
-</h1>
+  <body>
+    <div class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="../" class="navbar-brand">VeoRedes</a>
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+          <ul class="nav navbar-nav">
+            <li>
+              <a routerLink="nosotros">Nosotros</a>
+            </li>
+            <li>
+              <a routerLink="servicios">Servicios</a>
+            </li>
+            <li>
+              <a routerLink="productos">Productos</a>
+            </li>
+            <li>
+              <a routerLink="contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <router-outlet></router-outlet>
+    </div>
