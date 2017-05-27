@@ -1,3 +1,236 @@
-<p>
-  contact works!
-</p>
+<!--breadcrumbs start-->
+<div class="breadcrumbs">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-sm-4">
+        <h1>
+          Contacto
+        </h1>
+      </div>
+      <div class="col-lg-8 col-sm-8">
+        <ol class="breadcrumb pull-right">
+          <li>
+            <a href="/">
+              Inicio
+            </a>
+          </li>
+          <!--
+<li>
+<a href="#">
+Pages
+</a>
+</li>
+-->
+          <li class="active">
+            Contacto
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+<!--breadcrumbs end-->
+
+
+<div class="container">
+
+  <div class="row">
+    <div class="col-lg-5 col-sm-5 address">
+      <section class="contact-infos">
+        <h4>
+          Contactos
+        </h4>
+        <p>
+          <i class="icon-phone">
+          </i>
+          Javier Pérez Ferrada<br>
+          +56 9 90699373 <br>
+          jperez@gypnetwork.cl
+        </p>
+        <p>
+          <i class="icon-phone">
+          </i>
+          Francisco Gonzalez Ojeda<br>
+          +56 9 92653875  <br>
+          fgonzalez@gypnetwork.cl
+        </p>
+      </section>
+      <section class="contact-infos">
+        <h4 class="title custom-font text-black">
+          Direccion
+        </h4>
+        <address>
+          San Pedro 5 #712,
+          <br>
+          Valdivia, Chile
+        </address>
+      </section>
+    </div>
+    <div class="col-lg-7 col-sm-7 address">
+      <h4>
+        ESCRÍBANOS PARA QUE PODEMOS SABER DE USTED
+      </h4>
+      <div class="contact-form">
+        <form role="form" method="post" id='register'>
+          <div class="form-group">
+            <label for="name">
+              Nombre
+            </label>
+            <input type="text" placeholder="" name="name" id='name' class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="email">
+              Email
+            </label>
+            <input type="text" placeholder="" name="email" id='email' class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="phone">
+              Telefono
+            </label>
+            <input type="text" name="phone" id='phone' class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="message">
+              Mensaje
+            </label>
+            <textarea placeholder="" name="message" rows="5" class="form-control">
+            </textarea>
+          </div>
+          <button class="btn btn-info" type="submit">
+            Enviar
+          </button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+<!--container end-->
+
+<!--google map start
+<div class="contact-map">
+<div id="map-canvas" style="width: 100%; height: 400px">
+</div>
+</div>
+<!--google map end-->
+
+
+<div class="container">
+  <div class="row">
+    <div class='col-md-offset-2 col-md-8 text-center'>
+      <h2>
+        Profesionalismo, responsabilidad y garantía en todos nuestros trabajos.-
+      </h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-offset-2 col-md-8 mar-b-30">
+      <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+        <!-- Bottom Carousel Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#quote-carousel" data-slide-to="0" class="active">
+          </li>
+          <li data-target="#quote-carousel" data-slide-to="1">
+          </li>
+          <li data-target="#quote-carousel" data-slide-to="2">
+          </li>
+        </ol>
+
+        <!-- Carousel Slides / Quotes -->
+        <div class="carousel-inner">
+
+          <!-- Quote 1 -->
+          <div class="item active">
+            <blockquote>
+              <div class="row">
+                <div class="col-sm-3 text-center">
+                  <img class="img-circle" src="img/person_1.png" style="width: 100px;height:100px;" alt="">
+                </div>
+                <div class="col-sm-9">
+                  <p>
+                    Nuestro equipo se pondrá en contacto contigo dentro de las próximas 24 horas.
+                  </p>
+                  <small>
+                    Soluciones integrales en telecomunicaciones digitales.
+                  </small>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+          <!-- Quote 2 -->
+          <div class="item">
+            <blockquote>
+              <div class="row">
+                <div class="col-sm-3 text-center">
+                  <img class="img-circle" src="img/person_2.png" style="width: 100px;height:100px;" alt="">
+                </div>
+                <div class="col-sm-9">
+                  <p>
+                    GyPNetwork Limitada
+                  </p>
+                  <small>
+                    Valdivia
+                  </small>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+          <!-- Quote 3 -->
+          <div class="item">
+            <blockquote>
+              <div class="row">
+                <div class="col-sm-3 text-center">
+                  <img class="img-circle" src="img/person_3.png" style="width: 100px;height:100px;" alt="">
+                </div>
+                <div class="col-sm-9">
+                  <p>
+                    Domotica, Seguridad
+                  </p>
+                  <small>
+                    GyPNetwork Ltda.
+                  </small>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- popup respuesta mensaje contacto -->
+<div id="light" class="white_content">
+  <div id='light-response'></div> 
+  <div id='buttom-accept'><a href = "/" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'" class="btn btn-info">Aceptar</a></div>
+</div>
+<div id="fade" class="black_overlay"></div>
+
+
+
+
+
+
+
+<!-- Modal HTML -->
+<div id="myModal" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Información</h4>
+      </div>
+      <div class="modal-body">
+        <p id='server-response'></p>
+        <p class="text-warning"><small>Nuestro equipo se contactará con usted dentro de las próximas 24 horas.</small></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" onclick="window.location.href='/'">Aceptar</button>
+      </div>
+    </div>
+  </div>
+</div>
