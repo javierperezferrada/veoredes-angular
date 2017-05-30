@@ -11,6 +11,7 @@ import { ContactComponent } from './contact/contact.component';
 import { CamerasComponent } from './cameras/cameras.component';
 import { AlarmsComponent } from './alarms/alarms.component';
 import { HomeComponent } from './home/home.component';
+import { EmailValidator } from '../validators';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,7 @@ import { HomeComponent } from './home/home.component';
     HttpModule,
     routes
   ],
-  providers: [],
+  providers: [EmailValidator],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

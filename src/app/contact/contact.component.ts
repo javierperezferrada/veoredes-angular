@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, AbstractControl, FormGroup, Validators } from '@angular/forms';
+import { EmailValidator } from '../../validators';
 
 @Component({
   selector: 'app-contact',
@@ -26,7 +27,7 @@ export class ContactComponent implements OnInit {
   createForm() {
     this.contactForm = this.fb.group({
       name: ['', Validators.compose([Validators.required, Validators.minLength(4)])],
-      email: ['', Validators.compose([Validators.required, Validators.minLength(4)])],
+      email: ['', Validators.compose([Validators.required, EmailValidator.validate])],
       phone: ['', Validators.compose([Validators.required, ,Validators.pattern('[0-9]{9}')])],
       message: ['', Validators.compose([Validators.required, Validators.minLength(4)])],
     });
