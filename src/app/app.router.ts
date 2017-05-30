@@ -18,7 +18,7 @@ export const router: Routes = [
   { path: 'productos/camaras', component: CamerasComponent },
   { path: 'productos/alarmas', component: AlarmsComponent },
   { path: 'contacto', component: ContactComponent },
-  { path: '**', redirectTo: 'productos' },
+  //{ path: '**', redirectTo: 'productos/camaras' },
 ];
 
 export const routes: ModuleWithProviders = RouterModule.forRoot(router);
